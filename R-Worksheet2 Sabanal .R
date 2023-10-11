@@ -145,16 +145,16 @@ dimofhotel_vienna
 
 colnames(hotels_vienna)
 
-rey<-hotels_vienna[c("country","neighbourhood","price","stars","accommodation_type","rating")]
-rey
-View(rey)
+new<-hotels_vienna[c("country","neighbourhood","price","stars","accommodation_type","rating")]
+new
+View(new)
 #d.
-save(rey, file = "new.RData")
-View(rey)
+save(new, file = "new.RData")
+View(new)
 #e.
 load("new.RData")
-head(rey[[1]])
-tail(rey[[1]])
+head(new[[1]])
+tail(new[[1]])
 
 #10.
 vegetables_list <-c("Carrots", "Pumpkin", "Mushrooms", "Bell Peppers", "Tomatoes",
